@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFBF7"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FocusGuard"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#2D2D2D"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reclaim your attention."
+            android:textSize="16sp"
+            android:textColor="#A89685"
+            android:layout_marginBottom="24dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvTotalPoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 Points"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="#93B88A"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="8dp">
+
+                    <View
+                        android:id="@+id/imgBronze"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:drawable/btn_star_big_on"
+                        android:backgroundTint="#CD7F32"
+                        android:layout_marginEnd="16dp"/>
+
+                    <View
+                        android:id="@+id/imgSilver"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:drawable/btn_star_big_on"
+                        android:backgroundTint="#C0C0C0"
+                        android:layout_marginEnd="16dp"/>
+
+                    <View
+                        android:id="@+id/imgGold"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:drawable/btn_star_big_on"
+                        android:backgroundTint="#FFD700"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keep focusing to unlock badges!"
+                    android:textSize="12sp"
+                    android:textColor="#757575"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Goals"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2D2D2D"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/llGoalContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No goals yet. Add one!"
+                android:textColor="#A89685"
+                android:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSetGoal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="+ Add New Goal"
+            android:backgroundTint="#93B88A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="12dp"/>
+
+        <Button
+            android:id="@+id/btnManageApps"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Manage Productive Apps"
+            android:backgroundTint="#A89685"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="12dp"/>
+
+        <Button
+            android:id="@+id/btnViewStats"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="View Analytics"
+            android:backgroundTint="#FFD54F"
+            android:textColor="#2D2D2D"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            app:cornerRadius="12dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnDeepWork"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Start Deep Work Mode 🍅"
+            android:textSize="16sp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"
+            app:cornerRadius="12dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset System Data"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#757575"
+            style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+    </LinearLayout>
+</ScrollView>
