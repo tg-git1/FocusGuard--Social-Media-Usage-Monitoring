@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ECEFF1"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🛑"
+        android:textSize="60sp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Your Intention"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#37474F"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a deep breath. Do you really need to use this app right now?"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#546E7A"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Wait..."
+        android:textSize="16sp"
+        android:backgroundTint="#455A64"
+        android:enabled="false"/>
+
+</LinearLayout>
